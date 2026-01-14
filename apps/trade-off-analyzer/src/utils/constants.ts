@@ -1,7 +1,7 @@
 import type { Dimension, Antithesis } from "../types";
 
-export const DEFAULT_MAX_POINTS = 25;
-export const DEFAULT_MAX_SCORE_PER_DIM = 10;
+export const DEFAULT_MAX_POINTS = 16;
+export const DEFAULT_MAX_SCORE_PER_DIM = 8;
 
 export const DEFAULT_DIMENSIONS: Dimension[] = [
   { id: "d1", name: "Next Delivery", score: 5 },
