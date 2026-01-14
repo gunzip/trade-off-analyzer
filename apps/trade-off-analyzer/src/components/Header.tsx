@@ -17,7 +17,11 @@ export const Header = ({
   return (
     <header className="mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
       <div>
-        <h1 className="text-3xl font-bold text-indigo-700 flex items-center gap-2">
+        <h1
+          className="text-3xl font-bold text-indigo-700 flex items-center gap-2 cursor-pointer hover:underline"
+          onClick={() => onTabChange("simulation")}
+          title="Go to Home"
+        >
           <Activity className="w-8 h-8" />
           Trade-off Analyzer
         </h1>
@@ -37,7 +41,7 @@ export const Header = ({
           title="Copy configuration link to clipboard"
         >
           {copied ? <Check size={16} /> : <Share2 size={16} />}
-          {copied ? "Copied!" : "Share Config"}
+          {copied ? "Copied!" : "Share"}
         </button>
 
         <div className="flex bg-white p-1 rounded-lg border border-slate-200 shadow-sm">
