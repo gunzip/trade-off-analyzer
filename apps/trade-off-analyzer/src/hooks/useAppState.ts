@@ -60,7 +60,7 @@ export const useAppState = () => {
     let newDimensions = dimensions.map((d) => ({ ...d }));
 
     if (delta < 0) {
-      newDimensions[currentDimIndex].score = newValue;
+      newDimensions[currentDimIndex].score = Math.max(0, newValue);
       setDimensions(newDimensions);
       return;
     }
@@ -90,7 +90,10 @@ export const useAppState = () => {
           const pointsToSteal = Math.min(enemy.score, remainingDelta);
 
           if (pointsToSteal > 0) {
-            newDimensions[enemyIndex].score -= pointsToSteal;
+            newDimensions[enemyIndex].score = Math.max(
+              0,
+              enemy.score - pointsToSteal
+            );
             remainingDelta -= pointsToSteal;
           }
         });
@@ -98,7 +101,16 @@ export const useAppState = () => {
     }
 
     const actualIncrease = delta - remainingDelta;
-    newDimensions[currentDimIndex].score = currentDim.score + actualIncrease;
+    newDimensions[currentDimIndex].score = Math.max(
+      0,
+      currentDim.score + actualIncrease
+    );
+
+    newDimensions = newDimensions.map((d) => ({
+      ...d,
+      score: Math.max(0, d.score),
+    }));
+
     setDimensions(newDimensions);
   };
 
