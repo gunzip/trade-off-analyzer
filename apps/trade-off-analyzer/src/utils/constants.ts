@@ -4,12 +4,12 @@ export const DEFAULT_MAX_POINTS = 16;
 export const DEFAULT_MAX_SCORE_PER_DIM = 8;
 
 export const DEFAULT_DIMENSIONS: Dimension[] = [
-  { id: "d1", name: "Next Delivery", score: 5 },
-  { id: "d2", name: "Portability", score: 5 },
-  { id: "d3", name: "Cloud Savings", score: 5 },
-  { id: "d4", name: "Security", score: 5 },
-  { id: "d5", name: "Future Agility", score: 5 },
-  { id: "d6", name: "UX & Reliability", score: 5 },
+  { id: "d1", name: "Next Delivery", score: 0 },
+  { id: "d2", name: "Portability", score: 0 },
+  { id: "d3", name: "Cloud Savings", score: 0 },
+  { id: "d4", name: "Security", score: 0 },
+  { id: "d5", name: "Future Agility", score: 0 },
+  { id: "d6", name: "UX & Reliability", score: 0 },
 ];
 
 export const DEFAULT_ANTITHESES: Antithesis[] = [
