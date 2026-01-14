@@ -1,0 +1,36 @@
+.env
+*.DS_Store
+*.log
+.pnpm-store
+
+dist
+
+node_modules
+coverage
+
+local
+*.local*
+generated
+
+# Ignore .npmrc with tokens (but keep the template)
+.npmrc.local
+
+.turbo
+
+# Security-related files that shouldn't be committed
+*.key
+*.pem
+*.p12
+*.pfx
+audit-results.json
+security-report.json
+
+# Additional temporary and sensitive files
+tmp/
+*.tmp
+*.temp
+.vscode/settings.json
+.idea/
+
+.playwright-mcp
+core
