@@ -1,0 +1,26 @@
+{
+  "name": "trade-off-analyzer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint:check": "oxlint .",
+    "lint": "oxlint --fix .",
+    "format": "turbo run format",
+    "format:check": "turbo run format:check",
+    "typecheck": "turbo run typecheck:code",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "start": "turbo run start",
+    "clean": "turbo run clean",
+    "generate": "turbo run generate generate:tests"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.8",
+    "@devcontainers/cli": "^0.80.3",
+    "@pagopa/eslint-config": "^5.1.1",
+    "oxlint": "^1.38.0",
+    "turbo": "^2.7.3",
+    "vitest": "catalog:"
+  },
+  "packageManager": "pnpm@10.15.1"
+}

@@ -1,0 +1,19 @@
+packages:
+  - apps/*
+
+catalog:
+  vitest: ^4.0.16
+
+cleanupUnusedCatalogs: true
+
+minimumReleaseAge: 5700
+
+onlyBuiltDependencies:
+  - esbuild
+
+overrides:
+  qs@<6.14.1: '>=6.14.1'
+  vite@>=7.1.0 <=7.1.4: '>=7.1.5'
+  webpack-dev-server@<=5.2.0: '>=5.2.1'
+
+packageImportMethod: clone-or-copy
