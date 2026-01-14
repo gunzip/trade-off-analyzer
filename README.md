@@ -5,6 +5,10 @@ analyze, and balance multiple conflicting metrics or objectives. It provides
 interactive dashboards, customizable sliders, and visualizations to support
 decision-making in scenarios where trade-offs are necessary.
 
+https://gunzip.github.io/trade-off-analyzer/
+
+![Trade-Off Analyzer Screenshot](image.png)
+
 ## Features
 
 - Interactive dashboard for multi-criteria analysis
@@ -28,15 +32,9 @@ decision-making in scenarios where trade-offs are necessary.
 
 ### Installation
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/gunzip/trade-off-analyzer.git
-   cd trade-off-analyzer
-   ```
-2. Install dependencies:
-   ```sh
-   pnpm install
-   ```
+```sh
+pnpm install
+```
 
 ### Running the App
 
@@ -58,14 +56,6 @@ From the root or app directory:
 ```sh
 pnpm build
 ```
-
-## Project Structure
-
-- `apps/trade-off-analyzer/` - Main web application
-  - `src/components/` - React components
-  - `src/hooks/` - Custom React hooks
-  - `src/types/` - TypeScript types
-  - `src/utils/` - Utility functions
 
 ## License
 
