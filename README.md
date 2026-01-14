@@ -30,7 +30,7 @@ decision-making in scenarios where trade-offs are necessary.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/trade-off-analyzer.git
+   git clone https://github.com/gunzip/trade-off-analyzer.git
    cd trade-off-analyzer
    ```
 2. Install dependencies:
