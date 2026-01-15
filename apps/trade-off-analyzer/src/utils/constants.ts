@@ -14,17 +14,10 @@ export const DEFAULT_DIMENSIONS: Dimension[] = [
 
 export const DEFAULT_ANTITHESES: Antithesis[] = [
   { id: "a1", source: "d1", target: "d2" },
-  { id: "a2", source: "d2", target: "d1" },
   { id: "a3", source: "d1", target: "d3" },
-  { id: "a4", source: "d3", target: "d1" },
   { id: "a5", source: "d1", target: "d4" },
-  { id: "a6", source: "d4", target: "d1" },
   { id: "a7", source: "d1", target: "d5" },
-  { id: "a8", source: "d5", target: "d1" },
   { id: "a9", source: "d2", target: "d5" },
-  { id: "a10", source: "d5", target: "d2" },
   { id: "a11", source: "d1", target: "d6" },
-  { id: "a12", source: "d6", target: "d1" },
   { id: "a13", source: "d2", target: "d6" },
-  { id: "a14", source: "d6", target: "d2" },
 ];
