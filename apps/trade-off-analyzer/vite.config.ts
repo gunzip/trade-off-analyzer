@@ -9,6 +9,16 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split React and related libraries into a separate chunk
+          'react-vendor': ['react', 'react-dom', 'react/jsx-runtime'],
+          // Split recharts (likely the largest dependency) into its own chunk
+          'recharts-vendor': ['recharts'],
+        },
+      },
+    },
   },
   resolve: {
     alias: {
