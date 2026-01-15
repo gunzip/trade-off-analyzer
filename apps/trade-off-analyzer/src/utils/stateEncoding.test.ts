@@ -6,12 +6,8 @@ describe("stateEncoding", () => {
   const mockState: AppState = {
     mp: 16,
     ms: 8,
-    d: [
-      { id: "d1", name: "Test Dim", score: 5 },
-    ],
-    a: [
-      { id: "a1", source: "d1", target: "d2" },
-    ],
+    d: [{ id: "d1", name: "Test Dim", score: 5 }],
+    a: [{ id: "a1", source: "d1", target: "d2" }],
   };
 
   describe("encodeState", () => {

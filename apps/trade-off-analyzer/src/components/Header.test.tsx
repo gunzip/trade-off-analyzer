@@ -17,7 +17,11 @@ describe("Header", () => {
 
   it("renders the description", () => {
     render(<Header {...defaultProps} />);
-    expect(screen.getByText("Visualize architectural compromises and manage project constraints.")).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Visualize architectural compromises and manage project constraints."
+      )
+    ).toBeInTheDocument();
   });
 
   it("calls onTabChange when title is clicked", () => {
